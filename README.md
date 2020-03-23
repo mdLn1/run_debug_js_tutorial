@@ -4,4 +4,4 @@
 
 ## tutorial.html and tutorial.js represent the main functionality which comprises of a currency coverter with fictional conversion rates
 
-### Hope that people might find it usefult
+### Hope that people will find it useful together with the tutorial videos
