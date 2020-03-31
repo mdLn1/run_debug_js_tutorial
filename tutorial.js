@@ -1,8 +1,13 @@
+// static values for rate conversion
 var rates = {
   euroToDollar: 1.2,
   dollarToEuro: 0.85
 };
+
+// element that shows if there are errors in the currency conversion
 var amountError = document.getElementById("amount-error");
+
+// handles the currency conversion
 function convertCurrency() {
   amountError.style.display = "none";
   let result = document.getElementById("result");
@@ -26,6 +31,7 @@ function convertCurrency() {
   }
 }
 
+// validates if the amount received meets the expected criteria
 function isAmountValid(val) {
   if (isNaN(val)) {
     amountError.textContent = "Invalid amount";
@@ -38,6 +44,7 @@ function isAmountValid(val) {
   return true;
 }
 
+// adding events to elements on the webpage
 document.getElementById("submit").addEventListener("click", convertCurrency);
 document.getElementById("header-result")
 .addEventListener("mouseover", 
